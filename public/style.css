@@ -1,0 +1,216 @@
+/* 1. CSS Variables - The "Theme" Controller */
+:root {
+    --background: #0F0F0F;
+    --white: #FDf0D5;
+
+    --primary: #780000;
+    --primaryac: #C1121F;
+    --secondary: #003049;
+    --secondaryac: #669BBC;
+    --tertiary: #C2B9AA;
+    
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    background-color: var(--tertiary);
+}
+
+/* Nav Bar */
+.ww-navbar {
+    background-color: var(--secondary);
+    padding: 0.6rem 2rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
+} 
+
+.navbar-nav .nav-link {
+    color: var(--white);
+    font-weight: 500;
+    margin: 1rem;
+    position: relative;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--tertiary)
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+
+    width: 0%;
+    height: 4px;
+    bottom: -1px;
+    left: 50%;
+
+    background-color: var(--primary);
+
+    transform: translateX(-50%);
+    transition: width .3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand img {
+    transition: transform 0.2s ease;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.05);
+}
+
+/* Hero */
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+    url('https://i0.wp.com/www.chronogram.com/wp-content/uploads/2025/04/unnamed.webp?resize=1200%2C900&ssl=1');
+    color: var(--white);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.hero-content {
+    backdrop-filter: blur(3px);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Into Section */
+.store-intro {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+/* Featured section */
+.featured {
+    padding: 3rem 2rem;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.featured h2 {
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.featured-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.record-card {
+    width: 300px;
+    background-color: var(--background);
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    color: var(--white);
+    transition: transform .5s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.record-card img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.record-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.card-body {
+    background-color: var(--secondary);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+footer a {
+    color: var(--white)
+}
+
+footer a:hover {
+    color: var(--primaryac)
+}
+
+/* Tablet & Smaller Screens */
+@media (max-width: 992px) {
+    .featured-container {
+        grid-template-columns: repeat(2, 1fr); /* Drop to 2 columns */
+        margin-top: 20px; /* Remove overlap for cleaner mobile feel */
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stack logo and links */
+        gap: 10px;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr; /* 1 column on small phones */
+    }
+
+    .hero {
+        height: 50vh;
+    }
+}
