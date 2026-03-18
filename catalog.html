@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wax&Wire | Shop</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg ww-navbar sticky-top">
+        <section class="container-fluid">
+
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/wwlogo.png" alt="Wax and Wire logo" width="100">
+            </a>
+
+            <button 
+                class="navbar-toggler navbar-light"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <article class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="catalog.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+    </nav>
+
+    <main class="catalog">
+        
+        <header class="catalog-header">
+            <section class="container">
+                <h1>Browse Our Records</h1>
+                <p>All kinds of records from all kinds of genres.</p>
+            </section>
+        </header>
+
+        <section class="catalog-controls">
+            <section class="container">
+                <input type="text" placeholder="Search records..." class="search-bar">
+            </section>
+        </section>
+
+         <section class="catalog-grid container">
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-brasilian">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71XURoZg51L.jpg" alt="Brasilian Skies album cover">
+                <div class="card-body">
+                    <h5 class="card-title">Brasilian Skies</h5>
+                    <p class="card-text">Masayoshi Takanaka</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-sugar">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71nydCox1OL.jpg" alt="Brown Sugar album cover">
+                <div class="card-body">
+                    <h5 class="card-title">Brown Sugar</h5>
+                    <p class="card-text">D'Angelo</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-chromokopia">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/61T3m1XH8yL.jpg" alt="CHROMAKOPIA album cover">
+                <div class="card-body">
+                    <h5 class="card-title">CHROMAKOPIA</h5>
+                    <p class="card-text">Tyler, The Creator</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-yes">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/912OUU-dKPL.jpg" alt="Close to the Edge album cover">
+                <div class="card-body">
+                    <h5 class="card-title">Close to the Edge</h5>
+                    <p class="card-text">Yes</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-beagle">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/718ISQq3vsL.jpg" alt="FLYING BEAGLE album cover">
+                <div class="card-body">
+                    <h5 class="card-title">FLYING BEAGLE</h5>
+                    <p class="card-text">Himiko Kikuchi</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-weather">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/81E7rh0-8RL.jpg" alt="Heavy Weather album cover">
+                <div class="card-body">
+                    <h5 class="card-title">Heavy Weather</h5>
+                    <p class="card-text">Weather Report</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-hozier">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71psgynz2IL.jpg" alt="Hozier album cover">
+                <div class="card-body">
+                    <h5 class="card-title">Hozier</h5>
+                    <p class="card-text">Hozier</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-stranger">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71lZj0uUvpL.jpg" alt="The Stranger album cover">
+                <div class="card-body">
+                    <h5 class="card-title">The Stranger</h5>
+                    <p class="card-text">Billy Joel</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-jubilee">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71U6NdRAxBL.jpg" alt="Album cover">
+
+                <div class="card-body">
+                    <h5 class="card-title">Such Jubilee</h5>
+                    <p class="card-text">Watchhouse</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-fantasy">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/71uCmA9+o6L.jpg" alt="Album cover">
+
+                <div class="card-body">
+                    <h5 class="card-title">Twin Fantasy</h5>
+                    <p class="card-text">Car Seat Headrest</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-sonormal">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/81W0Zxkj4FL.jpg" alt="Album cover">
+
+                <div class="card-body">
+                    <h5 class="card-title">Being So Normal</h5>
+                    <p class="card-text">Peach Pit</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+        <article class="record-card-m" data-bs-toggle="modal" data-bs-target="#modal-wormwood">
+            <figure class="record-card">
+                <img src="https://m.media-amazon.com/images/I/8189pGmycZS.jpg" class="card-img-top" alt="album cover of Dear Wormwood by The Oh Hellos">
+
+                <div class="card-body">
+                    <h5 class="card-title">Dear Wormwood</h5>
+                    <p class="card-text">The Oh Hellos</p>
+                    <button class="price-btn">View More</button>
+                </div>
+            </figure>
+        </article>
+
+    </section>
+
+    <div class="modal fade" id="modal-brasilian" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Brasilian Skies</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+        
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71XURoZg51L.jpg" class="img-fluid rounded">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Masayoshi Takanaka</p>
+                            <p><strong>Genre:</strong> Jazz Fusion</p>
+                            <p><strong>Price:</strong> $48.00</p>
+                            <p>A smooth, upbeat fusion album with bright guitar tones and tropical vibes.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-sugar" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Brown Sugar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71nydCox1OL.jpg" alt="Brown Sugar album cover" class="img-fluid rounded">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> D'Angelo</p>
+                            <p><strong>Genre:</strong> Neo-Soul / R&B</p>
+                            <p><strong>Price:</strong> $37.00</p>
+                            <p>Classic neo-soul album blending rich vocals, funk grooves, and intimate R&B songwriting.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-chromokopia" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">CHROMOKOPIA</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/61T3m1XH8yL.jpg" alt="CHROMAKOPIA album cover" class="img-fluid rounded">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Tyler, The Creator</p>
+                            <p><strong>Genre:</strong> Hip-Hop / Alternative</p>
+                            <p><strong>Price:</strong> $40.00</p>
+                            <p>A bold, genre-blending album full of experimental beats, sharp lyricism, and colorful production.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-yes" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Close to the Edge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/912OUU-dKPL.jpg" alt="Close to the Edge album cover" class="img-fluid rounded">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Yes</p>
+                            <p><strong>Genre:</strong> Progressive Rock</p>
+                            <p><strong>Price:</strong> $24.99</p>
+                            <p>Progressive rock masterpiece with intricate arrangements, soaring vocals, and epic musical landscapes.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-beagle" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">FLYING BEAGLE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/718ISQq3vsL.jpg" class="img-fluid rounded" alt="FLYING BEAGLE album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Himiko Kikuchi</p>
+                            <p><strong>Genre:</strong> Jazz Fusion</p>
+                            <p><strong>Price:</strong> $92.00</p>
+                            <p>Jazz fusion at its finest, featuring intricate keyboard work, smooth improvisation, and high-energy grooves.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-weather" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Heavy Weather</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/81E7rh0-8RL.jpg" class="img-fluid rounded" alt="Heavy Weather album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Weather Report</p>
+                            <p><strong>Genre:</strong> Jazz Fusion</p>
+                            <p><strong>Price:</strong> $22.99</p>
+                            <p>A landmark jazz fusion album with powerful compositions, infectious grooves, and masterful instrumental interplay.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-hozier" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Hozier</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71psgynz2IL.jpg" class="img-fluid rounded" alt="Hozier album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Hozier</p>
+                            <p><strong>Genre:</strong> Indie Rock / Soul</p>
+                            <p><strong>Price:</strong> $26.98</p>
+                            <p>Soulful indie-rock debut with poetic lyrics, bluesy guitar, and hauntingly beautiful vocal performances.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>  
+
+
+    <div class="modal fade" id="modal-stranger" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">The Stranger</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71lZj0uUvpL.jpg" class="img-fluid rounded" alt="The Stranger album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Billy Joel</p>
+                            <p><strong>Genre:</strong> Pop Rock</p>
+                            <p><strong>Price:</strong> $25.98</p>
+                            <p>A pop-rock classic full of memorable melodies, introspective storytelling, and timeless songwriting.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-jubilee" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Such Jubilee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71U6NdRAxBL.jpg" class="img-fluid rounded" alt="Such Jubilee album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Watchhouse</p>
+                            <p><strong>Genre:</strong> Folk / Americana</p>
+                            <p><strong>Price:</strong> $24.99</p>
+                            <p>Warm, folk-infused songs with rich harmonies and intimate acoustic instrumentation.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-fantasy" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                
+                <header class="modal-header">
+                    <h5 class="modal-title">Twin Fantasy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/71uCmA9+o6L.jpg" class="img-fluid rounded" alt="Twin Fantasy album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Car Seat Headrest</p>
+                            <p><strong>Genre:</strong> Indie Rock / Lo-Fi</p>
+                            <p><strong>Price:</strong> $21.99</p>
+                            <p>Lo-fi indie-rock album with raw emotion, intricate lyrics, and energetic, layered instrumentation.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-sonormal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Being So Normal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/81W0Zxkj4FL.jpg" class="img-fluid rounded" alt="Being So Normal album cover">
+                        </figure>
+
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> Peach Pit</p>
+                            <p><strong>Genre:</strong> Indie Pop / Alternative</p>
+                            <p><strong>Price:</strong> $23.99</p>
+                            <p>Indie pop with breezy guitar lines, melancholic storytelling, and a laid-back, nostalgic atmosphere.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="modal-wormwood" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <h5 class="modal-title">Dear Wormwood</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+
+                <article class="modal-body">
+                    <div class="row">
+
+                        <figure class="col-md-6 text-center">
+                            <img src="https://m.media-amazon.com/images/I/8189pGmycZS.jpg" class="img-fluid rounded" alt="Dear Wormwood album cover">
+                        </figure>
+                        
+                        <section class="col-md-6">
+                            <p><strong>Artist:</strong> The Oh Hellos</p>
+                            <p><strong>Genre:</strong> Folk Rock / Indie Folk</p>
+                            <p><strong>Price:</strong> $23.00</p>
+                            <p>A folk-rock journey of hope and reflection, blending powerful vocal harmonies with lush instrumentation.</p>
+                            <div class="star-rating mb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <button class="price-btn">Buy Now!</button>
+                        </section>
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container text-center text-md-start">
+            <div class="row">
+
+                <section class="col-md-4 mb-4">
+                    <h5 class="footer-title">Wax & Wire</h5>
+                    <p>Hand-selected vinyl records delivered with care. Discover music that speaks to your soul.</p>
+                </section>
+
+
+                <section class="col-md-4 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p>
+                    <i class="bi bi-telephone-fill"></i> +1 (123) 456-7890<br>
+                    <i class="bi bi-envelope-fill"></i> support@waxandwire.com<br>
+                    <i class="bi bi-geo-alt-fill"></i> 1600 Pennsylvania Ave NW, Washington, DC 20500
+                    </p>
+
+                    <nav class="social-links">
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                    </nav>
+                </section>
+
+                <section class="col-md-4 mb-4">
+                    <h5 class="footer-title">Subscribe to Our Newsletter</h5>
+                    <form class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start gap-2">
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </section>
+            </div>
+
+        <hr class="mt-4 mb-3" style="border-color: rgba(255,255,255,0.2);">
+        <p class="text-center mb-0">&copy; 2026 Site by <a href="https://github.com">Brennan Hall</a>. All rights reserved.</p>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
