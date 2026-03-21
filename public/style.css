@@ -18,6 +18,7 @@
     box-sizing: border-box;
 }
 
+/* General Styling */
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background);
@@ -92,7 +93,7 @@ h2 {
 }
 
 
-/* Hero */
+/* Home Page Hero */
 
 .hero {
     background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
@@ -312,6 +313,40 @@ h2 {
     border-top: 1px solid rgba(0,0,0,0.2);
     padding-top: 0.5rem;
 }
+
+/* About Hero */
+.about-hero {
+    min-height: 40vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+/* Story Section */
+.about-story {
+    background-color: var(--tertiary);
+}
+
+/* Values Section */
+.about-values {
+    background-color: var(--background);
+    color: var(--white);
+}
+
+.value-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--primaryac);
+    transition: 0.25s ease;
+}
+
+.value-icon:hover {
+    color: var(--secondaryac);
+}
+
+
 
 /* Contact Page */
 form {
