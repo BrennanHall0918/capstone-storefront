@@ -1,0 +1,122 @@
+[
+  {
+    "id": "modal-brasilian",
+    "title": "Brasilian Skies",
+    "image": "https://m.media-amazon.com/images/I/71XURoZg51L.jpg",
+    "artist": "Masayoshi Takanaka",
+    "genre": "Jazz Fusion",
+    "price": 48.0,
+    "description": "A smooth, upbeat fusion album with bright guitar tones and tropical vibes.",
+    "rating": 4
+  },
+  {
+    "id": "modal-brown-sugar",
+    "title": "Brown Sugar",
+    "image": "https://m.media-amazon.com/images/I/71nydCox1OL.jpg",
+    "artist": "D'Angelo",
+    "genre": "R&B",
+    "price": 37.0,
+    "description": "Classic neo-soul album blending rich vocals, funk grooves, and intimate R&B songwriting.",
+    "rating": 5
+  },
+  {
+    "id": "modal-chromokopia",
+    "title": "CHROMOKOPIA",
+    "image": "https://m.media-amazon.com/images/I/61T3m1XH8yL.jpg",
+    "artist": "Tyler, The Creator",
+    "genre": "Hip-Hop / Alternative",
+    "price": 40.0,
+    "description": "A bold, genre-blending album full of experimental beats, sharp lyricism, and colorful production.",
+    "rating": 4
+  },
+  {
+    "id": "modal-yes-ctte",
+    "title": "Close to the Edge",
+    "image": "https://m.media-amazon.com/images/I/912OUU-dKPL.jpg",
+    "artist": "Yes",
+    "genre": "Progressive Rock",
+    "price": 24.99,
+    "description": "Progressive rock masterpiece with intricate arrangements, soaring vocals, and epic musical landscapes.",
+    "rating": 5
+  },
+  {
+    "id": "modal-beagle",
+    "title": "FLYING BEAGLE",
+    "image": "https://m.media-amazon.com/images/I/718ISQq3vsL.jpg",
+    "artist": "Himiko Kikuchi",
+    "genre": "Jazz Fusion",
+    "price": 92,
+    "description": "Jazz fusion at its finest, featuring intricate keyboard work, smooth improvisation, and high-energy grooves.",
+    "rating": 3
+  },
+  {
+    "id": "modal-weather",
+    "title": "Heavy Weather",
+    "image": "https://m.media-amazon.com/images/I/81E7rh0-8RL.jpg",
+    "artist": "Weather Report",
+    "genre": "Jazz Fusion",
+    "price": 22.99,
+    "description": "A landmark jazz fusion album with powerful compositions, infectious grooves, and masterful instrumental interplay.",
+    "rating": 4
+  },
+  {
+    "id": "modal-hozier",
+    "title": "Hozier",
+    "image": "https://m.media-amazon.com/images/I/71psgynz2IL.jpg",
+    "artist": "Hozier",
+    "genre": "Indie Rock / Soul",
+    "price": 26.98,
+    "description": "Soulful indie-rock debut with poetic lyrics, bluesy guitar, and hauntingly beautiful vocal performances.",
+    "rating": 3.5
+  },
+  {
+    "id": "modal-stranger",
+    "title": "The Stranger",
+    "image": "https://m.media-amazon.com/images/I/71lZj0uUvpL.jpg",
+    "artist": "Billy Joel",
+    "genre": "Pop Rock",
+    "price": 25.98,
+    "description": "A pop-rock classic full of memorable melodies, introspective storytelling, and timeless songwriting.",
+    "rating": 5
+  },
+  {
+    "id": "modal-jubilee",
+    "title": "Such Jubilee",
+    "image": "https://m.media-amazon.com/images/I/71U6NdRAxBL.jpg",
+    "artist": "Watchhouse",
+    "genre": "Folk / Americana",
+    "price": 24.99,
+    "description": "Warm, folk-infused songs with rich harmonies and intimate acoustic instrumentation.",
+    "rating": 4
+  },
+  {
+    "id": "modal-fantasy",
+    "title": "Twin Fantasy",
+    "image": "https://m.media-amazon.com/images/I/71uCmA9+o6L.jpg",
+    "artist": "Car Seat Headrest",
+    "genre": "Indie Rock / Lo-Fi",
+    "price": 21.99,
+    "description": "Lo-fi indie-rock album with raw emotion, intricate lyrics, and energetic, layered instrumentation.",
+    "rating": 5
+  },
+  {
+    "id": "modal-sonormal",
+    "title": "Being So Normal",
+    "image": "https://m.media-amazon.com/images/I/81W0Zxkj4FL.jpg",
+    "artist": "Peach Pit",
+    "genre": "Indie Pop / Alternative",
+    "price": 23.99,
+    "description": "Indie pop with breezy guitar lines, melancholic storytelling, and a laid-back, nostalgic atmosphere.",
+    "rating": 4
+  },
+  {
+    "id": "modal-wormwood",
+    "title": "Dear Wormwood",
+    "image": "https://m.media-amazon.com/images/I/8189pGmycZS.jpg",
+    "artist": "The Oh Hellos",
+    "genre": "Folk Rock / Indie Folk",
+    "price": 23.0,
+    "description": "A folk-rock journey of hope and reflection, blending powerful vocal harmonies with lush instrumentation.",
+    "rating": 4
+  }
+]
