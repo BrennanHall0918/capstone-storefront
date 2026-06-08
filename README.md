@@ -15,6 +15,7 @@ Wax & Wire is a fictional online record store built as a NeXTStack capstone fron
 - HTML
 - CSS
 - Bootstrap
+- JavaScript
 
 ## Pages
 

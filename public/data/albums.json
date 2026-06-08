@@ -1,6 +1,6 @@
 [
   {
-    "id": "modal-brasilian",
+    "id": "brasilian",
     "title": "Brasilian Skies",
     "image": "https://m.media-amazon.com/images/I/71XURoZg51L.jpg",
     "artist": "Masayoshi Takanaka",
@@ -10,7 +10,7 @@
     "rating": 4
   },
   {
-    "id": "modal-brown-sugar",
+    "id": "brown-sugar",
     "title": "Brown Sugar",
     "image": "https://m.media-amazon.com/images/I/71nydCox1OL.jpg",
     "artist": "D'Angelo",
@@ -20,7 +20,7 @@
     "rating": 5
   },
   {
-    "id": "modal-chromokopia",
+    "id": "chromokopia",
     "title": "CHROMOKOPIA",
     "image": "https://m.media-amazon.com/images/I/61T3m1XH8yL.jpg",
     "artist": "Tyler, The Creator",
@@ -30,7 +30,7 @@
     "rating": 4
   },
   {
-    "id": "modal-yes-ctte",
+    "id": "yes-ctte",
     "title": "Close to the Edge",
     "image": "https://m.media-amazon.com/images/I/912OUU-dKPL.jpg",
     "artist": "Yes",
@@ -40,7 +40,7 @@
     "rating": 5
   },
   {
-    "id": "modal-beagle",
+    "id": "beagle",
     "title": "FLYING BEAGLE",
     "image": "https://m.media-amazon.com/images/I/718ISQq3vsL.jpg",
     "artist": "Himiko Kikuchi",
@@ -50,7 +50,7 @@
     "rating": 3
   },
   {
-    "id": "modal-weather",
+    "id": "weather",
     "title": "Heavy Weather",
     "image": "https://m.media-amazon.com/images/I/81E7rh0-8RL.jpg",
     "artist": "Weather Report",
@@ -60,7 +60,7 @@
     "rating": 4
   },
   {
-    "id": "modal-hozier",
+    "id": "hozier",
     "title": "Hozier",
     "image": "https://m.media-amazon.com/images/I/71psgynz2IL.jpg",
     "artist": "Hozier",
@@ -70,7 +70,7 @@
     "rating": 3.5
   },
   {
-    "id": "modal-stranger",
+    "id": "stranger",
     "title": "The Stranger",
     "image": "https://m.media-amazon.com/images/I/71lZj0uUvpL.jpg",
     "artist": "Billy Joel",
@@ -80,7 +80,7 @@
     "rating": 5
   },
   {
-    "id": "modal-jubilee",
+    "id": "jubilee",
     "title": "Such Jubilee",
     "image": "https://m.media-amazon.com/images/I/71U6NdRAxBL.jpg",
     "artist": "Watchhouse",
@@ -90,7 +90,7 @@
     "rating": 4
   },
   {
-    "id": "modal-fantasy",
+    "id": "fantasy",
     "title": "Twin Fantasy",
     "image": "https://m.media-amazon.com/images/I/71uCmA9+o6L.jpg",
     "artist": "Car Seat Headrest",
@@ -100,7 +100,7 @@
     "rating": 5
   },
   {
-    "id": "modal-sonormal",
+    "id": "sonormal",
     "title": "Being So Normal",
     "image": "https://m.media-amazon.com/images/I/81W0Zxkj4FL.jpg",
     "artist": "Peach Pit",
@@ -110,13 +110,13 @@
     "rating": 4
   },
   {
-    "id": "modal-wormwood",
+    "id": "wormwood",
     "title": "Dear Wormwood",
     "image": "https://m.media-amazon.com/images/I/8189pGmycZS.jpg",
     "artist": "The Oh Hellos",
     "genre": "Folk Rock / Indie Folk",
     "price": 23.0,
     "description": "A folk-rock journey of hope and reflection, blending powerful vocal harmonies with lush instrumentation.",
-    "rating": 4
+    "rating": 5
   }
 ]
