@@ -62,7 +62,7 @@ export function populateCards() {
                                         <section class="col-md-6">
                                             <p><strong>Artist:</strong> ${album.artist}</p>
                                             <p><strong>Genre:</strong> ${album.genre}</p>
-                                            <p><strong>Price:</strong> ${album.price}</p>
+                                            <p><strong>Price:</strong> $${album.price.toFixed(2)}</p>
                                             <p>${album.description}</p>
                                             <div class="star-rating mb-2">
                                                 ${stars}
