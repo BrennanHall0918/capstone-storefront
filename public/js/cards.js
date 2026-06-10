@@ -1,12 +1,14 @@
-const cardContainer = document.getElementById("card-container");
-const modalContainer = document.getElementById("modal-container");
-
 export async function loadAlbums() {
     const response = await fetch("/public/data/albums.json");
     return await response.json();
 }
 
-export function populateCards(albums) {
+function renderAlbums(albums, containerId, modalId) {
+
+    const cardContainer = document.getElementById(containerId);
+    const modalContainer = document.getElementById(modalId);
+
+    if (!cardContainer || !modalContainer) return;
 
     cardContainer.innerHTML = "";
     modalContainer.innerHTML = "";
@@ -91,4 +93,26 @@ export function populateCards(albums) {
             </div>
         `;
     });
+}
+
+export function populateCards(albums) {
+    renderAlbums(albums,
+        "card-container",
+        "modal-container"
+    );
+}
+
+export function featuredCards(albums) {
+    const featuredIds = [
+        "jubilee",
+        "fantasy",
+        "sonormal",
+        "wormwood"
+    ];
+
+    renderAlbums(
+        albums.filter(album => featuredIds.includes(album.id)),
+        "featured-container",
+        "modal-container"
+    );
 }
