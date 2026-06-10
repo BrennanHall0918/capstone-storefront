@@ -6,7 +6,12 @@ populateNavbar();
 import { populateFooter } from "./footer.js";
 populateFooter();
 
-// Album Cards
-import { populateCards } from "./cards.js";
-populateCards();
+// Albums
+import { loadAlbums, populateCards } from "./cards.js";
+import { initSearch } from "./search.js";
 
+const albums = await loadAlbums();
+
+populateCards(albums);
+
+initSearch(albums, populateCards);
