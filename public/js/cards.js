@@ -79,7 +79,9 @@ function renderAlbums(albums, containerId, modalId) {
                                         ${stars}
                                     </div>
 
-                                    <button class="price-btn">
+                                    <button 
+                                        class="price-btn buy-btn"
+                                        data-id="${album.id}">
                                         Buy Now!
                                     </button>
                                 </section>
@@ -92,6 +94,23 @@ function renderAlbums(albums, containerId, modalId) {
 
             </div>
         `;
+    });
+
+    cartButtons(albums);
+}
+
+function cartButtons(albums) {
+    document.querySelectorAll(".buy-btn").forEach(button => {
+
+        button.addEventListener('click', ()=> {
+            const albumId = button.dataset.id;
+            const album = albums.find(album => album.id === albumId);
+
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(album);
+
+            localStorage.setItem('cart', JSON.stringify(cart));
+        });
     });
 }
 

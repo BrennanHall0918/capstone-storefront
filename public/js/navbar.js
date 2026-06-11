@@ -42,6 +42,10 @@ export function populateNavbar() {
                             <a href="contact.html" class="nav-link">Contact</a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="cart.html" class="nav-link"><i class="bi bi-cart"></i></a>
+                        </li>
+
                     </ul>
                 </article>
 
