@@ -112,6 +112,24 @@ function cartButtons(albums) {
             localStorage.setItem('cart', JSON.stringify(cart));
         });
     });
+
+    document.querySelectorAll(".remove-btn").forEach(button => {
+
+        button.addEventListener('click', ()=> {
+            const index = button.dataset.index;
+
+            cart.splice(index, 1);
+
+            localStorage.setItem(
+                "cart",
+                JSON.stringify(cart)
+            );
+
+            location.reload();
+            
+        });
+    });
+
 }
 
 export function populateCards(albums) {
