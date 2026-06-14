@@ -25,7 +25,6 @@ export function populateNavbar() {
 
                 <article class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto">
-
                         <li class="nav-item">
                             <a href="index.html" class="nav-link">Home</a>
                         </li>

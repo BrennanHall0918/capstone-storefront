@@ -1,5 +1,5 @@
 export async function loadAlbums() {
-    const response = await fetch("/public/data/albums.json");
+    const response = await fetch("public/data/albums.json");
     return await response.json();
 }
 
@@ -82,7 +82,8 @@ function renderAlbums(albums, containerId, modalId) {
                                     <button 
                                         class="price-btn buy-btn"
                                         data-id="${album.id}">
-                                        Buy Now!
+                                        <i class="bi bi-cart-plus"></i>
+                                        Add to Cart
                                     </button>
                                 </section>
 
@@ -110,6 +111,20 @@ function cartButtons(albums) {
             cart.push(album);
 
             localStorage.setItem('cart', JSON.stringify(cart));
+
+            button.innerHTML = `
+                <i class="bi bi-check-circle"></i>
+                Added!`;
+
+            button.classList.add("added");
+
+            setTimeout(()=> {
+                button.innerHTML = `
+                    <i class="but bi-cart-plus"></i>
+                    Add to Cart`;
+
+                button.classList.remove("added");
+            }, 1500);
         });
     });
 

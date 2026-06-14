@@ -405,6 +405,113 @@ form {
     margin: 0 auto;
 }
 
+/* Cart Page */
+
+.cart {
+    background-color: var(--tertiary);
+    min-height: 70vh;
+    padding: 3rem 1rem;
+}
+
+.cart h1 {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#cart-container .record-card {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--background);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#cart-container .record-card::before {
+    display: none;
+}
+
+#cart-container .record-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+
+#cart-container .card-body {
+    flex: 1;
+    min-height: 180px;
+    background-color: var(--secondary);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cart-container h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
+#cart-container p {
+    margin-bottom: .5rem;
+}
+
+.remove-btn {
+    position: static;
+    width: fit-content;
+    background-color: var(--primaryac);
+    border: none;
+    margin-top: .75rem;
+}
+
+.remove-btn:hover {
+    background-color: var(--primary);
+}
+
+.buy-btn {
+    transition: .25s ease;
+}
+
+.buy-btn.added {
+    background-color: #198754;
+    transform: scale(1.05);
+}
+
+/* Cart Summary */
+
+.cart-summary {
+    max-width: 850px;
+    margin: 2rem auto 0;
+    background-color: var(--background);
+    color: var(--white);
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: right;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+#cart-total {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
 /* Footer */
 footer {
     background-color: var(--secondary);
@@ -480,5 +587,20 @@ footer button.btn:hover {
 
     .hero {
         height: 50vh;
+    }
+
+    #cart-container .record-card {
+        flex-direction: column;
+    }
+
+    #cart-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    #cart-container .card-body {
+        min-height: auto;
+        text-align: center;
+        align-items: center;
     }
 }
