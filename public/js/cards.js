@@ -3,6 +3,219 @@ export async function loadAlbums() {
     return await response.json();
 }
 
+function createAlbumCard(album) {
+
+    const article = document.createElement("article");
+    article.classList.add("record-card-m");
+
+    article.dataset.bsToggle = "modal";
+    article.dataset.bsTarget = `#modal-${album.id}`;
+
+
+    const figure = document.createElement("figure");
+    figure.classList.add("record-card");
+
+
+    const image = document.createElement("img");
+    image.src = album.image;
+    image.alt = album.title;
+
+
+    const body = document.createElement("div");
+    body.classList.add("card-body");
+
+
+    const title = document.createElement("h5");
+    title.classList.add("card-title");
+    title.textContent = album.title;
+
+
+    const artist = document.createElement("p");
+    artist.classList.add("card-text");
+    artist.textContent = album.artist;
+
+
+    const button = document.createElement("button");
+    button.classList.add("price-btn");
+    button.textContent = "View More";
+
+
+    body.append(
+        title,
+        artist,
+        button
+    );
+
+    figure.append(
+        image,
+        body
+    );
+
+    article.appendChild(figure);
+
+
+    return article;
+}
+
+function createAlbumModal(album) {
+
+    const modal = document.createElement("div");
+    modal.classList.add("modal", "fade");
+    modal.id = `modal-${album.id}`;
+    modal.tabIndex = -1;
+
+
+    const dialog = document.createElement("div");
+    dialog.classList.add(
+        "modal-dialog",
+        "modal-dialog-centered",
+        "modal-lg"
+    );
+
+
+    const content = document.createElement("div");
+    content.classList.add("modal-content");
+
+
+    const header = document.createElement("header");
+    header.classList.add("modal-header");
+
+
+    const title = document.createElement("h5");
+    title.classList.add("modal-title");
+    title.textContent = album.title;
+
+
+    const closeButton = document.createElement("button");
+    closeButton.type = "button";
+    closeButton.classList.add("btn-close");
+    closeButton.dataset.bsDismiss = "modal";
+
+
+    header.append(
+        title,
+        closeButton
+    );
+
+
+    const body = document.createElement("article");
+    body.classList.add("modal-body");
+
+
+    const row = document.createElement("div");
+    row.classList.add("row");
+
+
+    const imageColumn = document.createElement("figure");
+    imageColumn.classList.add(
+        "col-md-6",
+        "text-center"
+    );
+
+
+    const image = document.createElement("img");
+    image.src = album.image;
+    image.alt = `${album.title} album cover`;
+    image.classList.add(
+        "img-fluid",
+        "rounded"
+    );
+
+
+    imageColumn.appendChild(image);
+
+
+    const infoColumn = document.createElement("section");
+    infoColumn.classList.add("col-md-6");
+
+
+    const artist = document.createElement("p");
+    artist.innerHTML = "<strong>Artist:</strong> ";
+    artist.append(album.artist);
+
+
+    const genre = document.createElement("p");
+    genre.innerHTML = "<strong>Genre:</strong> ";
+    genre.append(album.genre);
+
+
+    const price = document.createElement("p");
+    price.innerHTML = "<strong>Price:</strong> ";
+    price.append(`$${album.price.toFixed(2)}`);
+
+
+    const description = document.createElement("p");
+    description.textContent = album.description;
+
+
+    const stars = document.createElement("div");
+    stars.classList.add(
+        "star-rating",
+        "mb-2"
+    );
+
+
+    for (let i = 0; i < 5; i++) {
+
+        const star = document.createElement("i");
+
+        if (i < album.rating) {
+            star.classList.add("bi", "bi-star-fill");
+        } else {
+            star.classList.add("bi", "bi-star");
+        }
+
+        stars.appendChild(star);
+    }
+
+
+    const buyButton = document.createElement("button");
+    buyButton.classList.add(
+        "price-btn",
+        "buy-btn"
+    );
+
+    buyButton.dataset.id = album.id;
+
+    buyButton.innerHTML = `
+        <i class="bi bi-cart-plus"></i>
+        Add to Cart
+    `;
+
+
+    infoColumn.append(
+        artist,
+        genre,
+        price,
+        description,
+        stars,
+        buyButton
+    );
+
+
+    row.append(
+        imageColumn,
+        infoColumn
+    );
+
+
+    body.appendChild(row);
+
+
+    content.append(
+        header,
+        body
+    );
+
+
+    dialog.appendChild(content);
+
+    modal.appendChild(dialog);
+
+
+    return modal;
+}
+
 function renderAlbums(albums, containerId, modalId) {
 
     const cardContainer = document.getElementById(containerId);
@@ -13,154 +226,112 @@ function renderAlbums(albums, containerId, modalId) {
     cardContainer.innerHTML = "";
     modalContainer.innerHTML = "";
 
+
     albums.forEach(album => {
 
-        cardContainer.innerHTML += `
-            <article
-                class="record-card-m"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-${album.id}">
+        const card = createAlbumCard(album);
 
-                <figure class="record-card">
-                    <img src="${album.image}" alt="${album.title}">
+        cardContainer.appendChild(card);
 
-                    <div class="card-body">
-                        <h5 class="card-title">${album.title}</h5>
-                        <p class="card-text">${album.artist}</p>
-                        <button class="price-btn">
-                            View More
-                        </button>
-                    </div>
-                </figure>
+        const modal = createAlbumModal(album);
 
-            </article>
-        `;
-
-        const stars =
-            `<i class="bi bi-star-fill"></i>`.repeat(album.rating) +
-            `<i class="bi bi-star"></i>`.repeat(5 - album.rating);
-
-        modalContainer.innerHTML += `
-            <div
-                class="modal fade"
-                id="modal-${album.id}"
-                tabindex="-1">
-
-                <div class="modal-dialog modal-dialog-centered modal-lg">
-                    <div class="modal-content">
-
-                        <header class="modal-header">
-                            <h5 class="modal-title">${album.title}</h5>
-
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="modal">
-                            </button>
-                        </header>
-
-                        <article class="modal-body">
-                            <div class="row">
-
-                                <figure class="col-md-6 text-center">
-                                    <img
-                                        src="${album.image}"
-                                        class="img-fluid rounded"
-                                        alt="${album.title} album cover">
-                                </figure>
-
-                                <section class="col-md-6">
-                                    <p><strong>Artist:</strong> ${album.artist}</p>
-                                    <p><strong>Genre:</strong> ${album.genre}</p>
-                                    <p><strong>Price:</strong> $${album.price.toFixed(2)}</p>
-                                    <p>${album.description}</p>
-
-                                    <div class="star-rating mb-2">
-                                        ${stars}
-                                    </div>
-
-                                    <button 
-                                        class="price-btn buy-btn"
-                                        data-id="${album.id}">
-                                        <i class="bi bi-cart-plus"></i>
-                                        Add to Cart
-                                    </button>
-                                </section>
-
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
-
-            </div>
-        `;
+        cardContainer.appendChild(modal);
     });
 
     cartButtons(albums);
 }
 
+
 function cartButtons(albums) {
+
     document.querySelectorAll(".buy-btn").forEach(button => {
 
-        button.addEventListener('click', ()=> {
+        button.addEventListener("click", ()=> {
+
             const albumId = button.dataset.id;
+
             const album = albums.find(album => album.id === albumId);
 
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
             cart.push(album);
 
-            localStorage.setItem('cart', JSON.stringify(cart));
-
-            button.innerHTML = `
-                <i class="bi bi-check-circle"></i>
-                Added!`;
-
-            button.classList.add("added");
-
-            setTimeout(()=> {
-                button.innerHTML = `
-                    <i class="but bi-cart-plus"></i>
-                    Add to Cart`;
-
-                button.classList.remove("added");
-            }, 1500);
-        });
-    });
-
-    document.querySelectorAll(".remove-btn").forEach(button => {
-
-        button.addEventListener('click', ()=> {
-            const index = button.dataset.index;
-
-            cart.splice(index, 1);
 
             localStorage.setItem(
                 "cart",
                 JSON.stringify(cart)
             );
 
-            location.reload();
-            
+
+            button.innerHTML = `
+                <i class="bi bi-check-circle"></i>
+                Added!
+            `;
+
+            button.classList.add("added");
+
+
+            setTimeout(()=> {
+
+                button.innerHTML = `
+                    <i class="bi bi-cart-plus"></i>
+                    Add to Cart
+                `;
+
+                button.classList.remove("added");
+
+            }, 1500);
+
         });
+
+    });
+
+
+    document.querySelectorAll(".remove-btn").forEach(button => {
+
+        button.addEventListener("click", ()=> {
+
+            const index = button.dataset.index;
+
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            cart.splice(index, 1);
+
+
+            localStorage.setItem(
+                "cart",
+                JSON.stringify(cart)
+            );
+
+
+            location.reload();
+
+        });
+
     });
 
 }
 
+
 export function populateCards(albums) {
-    renderAlbums(albums,
+    renderAlbums(
+        albums,
         "card-container",
         "modal-container"
     );
 }
 
+
 export function featuredCards(albums) {
+
     const featuredIds = [
         "jubilee",
         "fantasy",
         "sonormal",
         "wormwood"
     ];
+
 
     renderAlbums(
         albums.filter(album => featuredIds.includes(album.id)),
